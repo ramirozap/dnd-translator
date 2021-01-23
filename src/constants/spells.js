@@ -38,7 +38,7 @@ const spells = [
   },
   {
     translation: {
-      es: "",
+      es: "Guarda contra la muerte",
     },
     name: "Death Ward",
     components: "VS",
@@ -160,7 +160,7 @@ const spells = [
     concentration: "no",
     duration: "1 round",
     translation: {
-      es: "",
+      es: "Saeta guía",
     },
     name: "Guiding Bolt",
     components: "VS",
@@ -200,7 +200,7 @@ const spells = [
     range: "Self",
     components: "V",
     translation: {
-      es: "",
+      es: "Castigo marcador",
     },
     name: "Branding Smite",
     duration: "up to 1 minute",
@@ -299,7 +299,7 @@ const spells = [
     duration: "up to 1 minute",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Disipar el bien y el mal",
     },
     name: "Dispel Evil and Good",
     ritual: "no",
@@ -343,7 +343,7 @@ const spells = [
     },
     duration: "up to 1 minute",
     translation: {
-      es: "",
+      es: "Duelo forzado",
     },
     name: "Compelled Duel",
     components: "V",
@@ -670,7 +670,7 @@ const spells = [
   {
     duration: "Instantaneous",
     translation: {
-      es: "",
+      es: "Crear comida y agua",
     },
     name: "Create Food and Water",
     components: "VS",
@@ -708,7 +708,7 @@ const spells = [
   {
     components: "V",
     translation: {
-      es: "",
+      es: "El manto del cruzado",
     },
     name: "Crusader's Mantle",
     duration: "up to 1 minute",
@@ -731,7 +731,7 @@ const spells = [
     ritual: "no",
     level: "1",
     translation: {
-      es: "",
+      es: "Castigo abrasador",
     },
     name: "Searing Smite",
     components: "V",
@@ -747,7 +747,7 @@ const spells = [
     concentration: "no",
     range: "30 feet",
     translation: {
-      es: "",
+      es: "Plegaria de curación",
     },
     name: "Prayer of Healing",
     components: "V",
@@ -844,7 +844,7 @@ const spells = [
     ritual: "no",
     level: "0",
     translation: {
-      es: "",
+      es: "Llama sagrada",
     },
     name: "Sacred Flame",
     components: "VS",
@@ -862,7 +862,7 @@ const spells = [
     duration: "Instantaneous",
     components: "VSMgp",
     translation: {
-      es: "",
+      es: "Augurio",
     },
     name: "Augury",
     ritual: "yes",
@@ -1117,7 +1117,7 @@ const spells = [
   {
     components: "V",
     translation: {
-      es: "",
+      es: "Taumaturgia",
     },
     name: "Thaumaturgy",
     duration: "1 minute",
@@ -1206,7 +1206,7 @@ const spells = [
     duration: "up to 1 hour",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Maleficio",
     },
     name: "Hex",
   },
@@ -1292,7 +1292,7 @@ const spells = [
   },
   {
     translation: {
-      es: "",
+      es: "Arma espiritual",
     },
     name: "Spiritual Weapon",
     components: "VS",
@@ -1396,7 +1396,7 @@ const spells = [
     },
     duration: "Until dispelled",
     translation: {
-      es: "",
+      es: "Consagrar",
     },
     name: "Hallow",
     components: "VSMgp",
@@ -1404,6 +1404,24 @@ const spells = [
     concentration: "no",
     range: "Touch",
     page: "phb 249",
+    description: {
+      es: `Tocas un punto e infundes el área que lo rodea con un poder sagrado (o sacrílego). El área puede tener un radio de hasta 60 pies y el conjuro falla si en el radio incluye un área que ya se encuentra bajo el conjuro Sacralizar. El área afectada está sujeta a los siguientes efectos.
+
+        En primer lugar, los celestiales, elementales, fatas, infernales y no muertos no pueden entrar, ni tampoco pueden hacerlo criaturas hechizadas, asustados o poseídas por ellos. Cualquier criatura hechizada, asustada o poseída por una criatura de este tipo deja de estarlo tras entrar en el área. Puedes excluir uno o más de estos tipos de criaturas para que no sufran este efecto.
+        
+        En segundo lugar, puedes vincular un efecto adicional al área. Elige el efecto de la siguiente lista o uno que te ofrezca el director de juego. Algunos de estos efectos se aplican a las criaturas que hay dentro del área: puedes indicar si el efecto se aplica a todas las criaturas, a criaturas que siguen a un líder o a una deidad específicos o a criaturas de un tipo concreto, como orcos o trolls. Cuando una criatura que quedaría afectada entra en el área del conjuro por primera vez en un turno o empieza un turno en ella, puede hacer una tirada de salvación de Carisma. Si tiene éxito, ignora el efecto adicional hasta que salga del área.
+        
+        · Descanso eterno. Los cadáveres enterrados en el área no se pueden convertir en no muertos.
+        · Idiomas. Las criaturas afectadas pueden comunicarse con otra criatura que se encuentre dentro del área, incluso si no comparten ningún idioma.
+        · Interferencia extradimensional. Las criaturas afectadas no pueden moverse ni viajar usando teletransporte o medios extradimensionales o extraplanares.
+        · Luz diurna. Luz brillante inunda el área. La oscuridad mágica creada por conjuros de un nivel inferior al del espacio de conjuro que uses para lanzar este conjuro no puede extinguir la luz.
+        · Miedo. Las criaturas afectadas están asustadas mientras estén dentro del área.
+        · Oscuridad. La oscuridad inunda el área. La luz normal, así como la luz mágica creada por conjuros que tengan un nivel inferior al del espacio de conjuro que uses para lanzar este conjuro, no puede iluminar el área.
+        · Protección energética. Las criaturas afectadas dentro del área tienen resistencia a un tipo de daño de tu elección, excepto contundente, perforante y cortante.
+        · Silencio. Ningún sonido puede surgir de dentro del área y ningún sonido puede llegar a ella.
+        · Valor. Las criaturas afectadas no pueden asustarse dentro del área.
+        · Vulnerabilidad energética. Las criaturas afectadas dentro del área son vulnerables a un tipo de daño de tu elección, excepto contundente, perforante y cortante.`,
+    },
   },
   {
     professions: {
@@ -1427,7 +1445,7 @@ const spells = [
   {
     components: "VSM",
     translation: {
-      es: "",
+      es: "Carcaj veloz",
     },
     name: "Swift Quiver",
     duration: "up to 1 minute",
@@ -1464,7 +1482,7 @@ const spells = [
   {
     duration: "up to 1 minute",
     translation: {
-      es: "",
+      es: "Aura de vitalidad",
     },
     name: "Aura of Vitality",
     components: "V",
@@ -1740,7 +1758,7 @@ const spells = [
   {
     components: "VS",
     translation: {
-      es: "",
+      es: "Hallar corcel",
     },
     name: "Find Steed",
     duration: "Instantaneous",
@@ -1762,7 +1780,7 @@ const spells = [
     concentration: "no",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Conjurar descarga de proyectiles",
     },
     name: "Conjure Barrage",
     duration: "Instantaneous",
@@ -1938,7 +1956,7 @@ const spells = [
     concentration: "yes",
     duration: "up to 1 minute",
     translation: {
-      es: "",
+      es: "Señal de esperanza",
     },
     name: "Beacon of Hope",
     components: "VS",
@@ -2035,7 +2053,7 @@ const spells = [
     castingTime: "1 action",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Conjurar lluvia de flechas",
     },
     name: "Conjure Volley",
     duration: "Instantaneous",
@@ -2081,7 +2099,7 @@ const spells = [
     },
     duration: "Instantaneous",
     translation: {
-      es: "",
+      es: "Revivir",
     },
     name: "Revivify",
     components: "VSMgp",
@@ -2106,7 +2124,7 @@ const spells = [
   },
   {
     translation: {
-      es: "",
+      es: "Vínculo protector",
     },
     name: "Warding Bond",
     components: "VSMgp",
@@ -2207,7 +2225,7 @@ const spells = [
     concentration: "no",
     duration: "Instantaneous",
     translation: {
-      es: "",
+      es: "Palabra de curación en masa",
     },
     name: "Mass Healing Word",
     components: "V",
@@ -2261,7 +2279,7 @@ const spells = [
     duration: "up to 10 minutes",
     components: "V",
     translation: {
-      es: "",
+      es: "Aura de vida",
     },
     name: "Aura of Life",
     ritual: "no",
@@ -2394,7 +2412,7 @@ const spells = [
   {
     components: "V",
     translation: {
-      es: "",
+      es: "Castigo cegador",
     },
     name: "Blinding Smite",
     duration: "up to 1 minute",
@@ -2696,7 +2714,7 @@ const spells = [
     castingTime: "1 action",
     components: "V",
     translation: {
-      es: "",
+      es: "Orden imperiosa",
     },
     name: "Command",
     duration: "1 round",
@@ -2728,7 +2746,7 @@ const spells = [
     ritual: "no",
     level: "1",
     translation: {
-      es: "",
+      es: "Favor divino",
     },
     name: "Divine Favor",
     components: "VS",
@@ -2866,7 +2884,7 @@ const spells = [
     concentration: "yes",
     components: "V",
     translation: {
-      es: "",
+      es: "Castigo desterrador",
     },
     name: "Banishing Smite",
     duration: "up to 1 minute",
@@ -2961,7 +2979,7 @@ const spells = [
     duration: "Instantaneous",
     components: "VS",
     translation: {
-      es: "",
+      es: "Infligir heridas",
     },
     name: "Inflict Wounds",
     ritual: "no",
@@ -3587,7 +3605,7 @@ const spells = [
     duration: "Instantaneous",
     components: "VS",
     translation: {
-      es: "",
+      es: "Curación en masa",
     },
     name: "Mass Heal",
   },
@@ -3838,7 +3856,7 @@ const spells = [
     castingTime: "10 minutes",
     components: "VSMgp",
     translation: {
-      es: "",
+      es: "Prohibición",
     },
     name: "Forbiddance",
     duration: "24 hours",
@@ -4315,7 +4333,7 @@ const spells = [
     level: "6",
     ritual: "no",
     translation: {
-      es: "",
+      es: "Aliado planar",
     },
     name: "Planar Ally",
     components: "VS",
@@ -4490,7 +4508,7 @@ const spells = [
     concentration: "yes",
     components: "VS",
     translation: {
-      es: "",
+      es: "Barrera de cuchillas",
     },
     name: "Blade Barrier",
     duration: "up to 10 minutes",
@@ -4686,7 +4704,7 @@ const spells = [
     castingTime: "1 action",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Auxilio",
     },
     name: "Aid",
     duration: "8 hours",
@@ -4705,7 +4723,7 @@ const spells = [
     duration: "Instantaneous",
     components: "VS",
     translation: {
-      es: "",
+      es: "Descarga sobrenatural",
     },
     name: "Eldritch Blast",
     school: "Evocation",
@@ -4735,7 +4753,7 @@ const spells = [
   {
     components: "V",
     translation: {
-      es: "",
+      es: "Castigo furioso",
     },
     name: "Wrathful Smite",
     duration: "up to 1 minute",
@@ -4863,7 +4881,7 @@ const spells = [
     castingTime: "1 bonus action",
     components: "V",
     translation: {
-      es: "",
+      es: "Palabra divina",
     },
     name: "Divine Word",
     duration: "Instantaneous",
@@ -5178,7 +5196,7 @@ const spells = [
     },
     duration: "up to 1 minute",
     translation: {
-      es: "",
+      es: "Tormenta de espinas",
     },
     name: "Hail of Thorns",
     components: "V",
@@ -5293,7 +5311,7 @@ const spells = [
   },
   {
     translation: {
-      es: "",
+      es: "Golpe apresador",
     },
     name: "Ensnaring Strike",
     components: "V",
@@ -5602,7 +5620,7 @@ const spells = [
     ritual: "no",
     level: "1",
     translation: {
-      es: "",
+      es: "Reprensión infernal",
     },
     name: "Hellish Rebuke",
     components: "VS",
@@ -5619,7 +5637,7 @@ const spells = [
     duration: "up to 1 minute",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Bendición",
     },
     name: "Bless",
     school: "Enchantment",
@@ -5655,7 +5673,7 @@ const spells = [
     },
     duration: "Instantaneous",
     translation: {
-      es: "",
+      es: "Ola destructora",
     },
     name: "Destructive Wave",
     components: "V",
@@ -5708,7 +5726,7 @@ const spells = [
     duration: "up to 10 minutes",
     components: "VS",
     translation: {
-      es: "",
+      es: "Detectar el bien y el mal",
     },
     name: "Detect Evil and Good",
     ritual: "no",
@@ -5787,7 +5805,7 @@ const spells = [
     duration: "up to 1 minute",
     components: "VSMgp",
     translation: {
-      es: "",
+      es: "Aura sagrada",
     },
     name: "Holy Aura",
     level: "8",
@@ -6150,7 +6168,7 @@ const spells = [
     duration: "up to 1 hour",
     components: "V",
     translation: {
-      es: "",
+      es: "Marca del cazador",
     },
     name: "Hunter's Mark",
     school: "Divination",
@@ -6381,7 +6399,7 @@ const spells = [
     school: "Conjuration",
     concentration: "yes",
     translation: {
-      es: "",
+      es: "Conjurar celestial",
     },
     name: "Conjure Celestial",
     components: "VS",
@@ -6633,7 +6651,7 @@ const spells = [
   {
     components: "VSM",
     translation: {
-      es: "",
+      es: "Hambre de Hadar",
     },
     name: "Hunger of Hadar",
     duration: "up to 1 minute",
@@ -6791,7 +6809,7 @@ const spells = [
     },
     duration: "1 minute",
     translation: {
-      es: "",
+      es: "Comunión",
     },
     name: "Commune",
     components: "VSM",
@@ -7044,7 +7062,7 @@ const spells = [
     duration: "up to 10 minutes",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Escudo de fe",
     },
     name: "Shield of Faith",
     ritual: "no",
@@ -7364,7 +7382,7 @@ const spells = [
     },
     duration: "up to 10 minutes",
     translation: {
-      es: "",
+      es: "Círculo de poder",
     },
     name: "Circle of Power",
     components: "V",
@@ -7675,7 +7693,7 @@ const spells = [
   {
     duration: "1 minute",
     translation: {
-      es: "",
+      es: "Santuario",
     },
     name: "Sanctuary",
     components: "VSM",
@@ -7793,7 +7811,7 @@ const spells = [
   },
   {
     translation: {
-      es: "",
+      es: "Guardián de la fe",
     },
     name: "Guardian of Faith",
     components: "V",
@@ -8038,7 +8056,7 @@ const spells = [
     castingTime: "1 action",
     components: "V",
     translation: {
-      es: "",
+      es: "Palabra de regreso",
     },
     name: "Word of Recall",
     duration: "Instantaneous",
@@ -8090,7 +8108,7 @@ const spells = [
     school: "Necromancy",
     concentration: "no",
     translation: {
-      es: "",
+      es: "Dañar",
     },
     name: "Harm",
     components: "VS",
@@ -8385,7 +8403,7 @@ const spells = [
     duration: "Instantaneous",
     components: "VS",
     translation: {
-      es: "",
+      es: "Brazos de Hadar",
     },
     name: "Arms of Hadar",
     concentration: "no",
@@ -8455,7 +8473,7 @@ const spells = [
     concentration: "yes",
     components: "V",
     translation: {
-      es: "",
+      es: "Aura de pureza",
     },
     name: "Aura of Purity",
     duration: "up to 10 minutes",
@@ -8474,7 +8492,7 @@ const spells = [
     duration: "up to 1 minute",
     components: "V",
     translation: {
-      es: "",
+      es: "Castigo abrumador",
     },
     name: "Staggering Smite",
     level: "4",
@@ -8550,7 +8568,7 @@ const spells = [
     },
     duration: "up to 1 hour",
     translation: {
-      es: "",
+      es: "Arma elemental",
     },
     name: "Elemental Weapon",
     components: "VS",
@@ -8567,7 +8585,7 @@ const spells = [
     duration: "1 hour",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Armadura de Agathys",
     },
     name: "Armor of Agathys",
     level: "1",
@@ -8682,7 +8700,7 @@ const spells = [
   },
   {
     translation: {
-      es: "",
+      es: "Adivinación",
     },
     name: "Divination",
     components: "VSMgp",
@@ -8702,7 +8720,7 @@ const spells = [
     duration: "Instantaneous",
     components: "VS",
     translation: {
-      es: "",
+      es: "Piedad con los moribundos",
     },
     name: "Spare the Dying",
     level: "0",
@@ -8828,7 +8846,7 @@ const spells = [
     },
     duration: "8 hours",
     translation: {
-      es: "",
+      es: "Cordón de flechas",
     },
     name: "Cordon of Arrows",
     components: "VSM",
@@ -9079,7 +9097,7 @@ const spells = [
   {
     components: "V",
     translation: {
-      es: "",
+      es: "Castigo atronador",
     },
     name: "Thunderous Smite",
     duration: "up to 1 minute",
@@ -9140,7 +9158,7 @@ const spells = [
     range: "Self",
     components: "VS",
     translation: {
-      es: "",
+      es: "Flecha de relámpago",
     },
     name: "Lightning Arrow",
     duration: "up to 1 minute",
@@ -9222,7 +9240,7 @@ const spells = [
     castingTime: "1 action",
     components: "VSM",
     translation: {
-      es: "",
+      es: "Golpe flamígero",
     },
     name: "Flame Strike",
     duration: "Instantaneous",
@@ -9329,7 +9347,7 @@ const spells = [
   {
     duration: "up to 10 minutes",
     translation: {
-      es: "",
+      es: "Espíritus guardianes",
     },
     name: "Spirit Guardians",
     components: "VSM",

@@ -1,5 +1,7 @@
 .App {
   text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -35,4 +37,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  padding: 5px;
+}
+
+.odd {
+  background-color: #eee;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: inline;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: #eee;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #282c34;
+}
+
+.sortable {
+  cursor: pointer;
 }
